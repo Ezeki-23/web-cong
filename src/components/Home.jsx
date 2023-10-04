@@ -2,7 +2,7 @@ import ItemsContainer from "../components/Footer/ItemsContainer";
 import SocialIcons from "../components/Footer/SocialIcons";
 import { Icons } from "../components/Footer/Menus";
 import Carousel from './Carousel'
-import { images } from './assets/images/images'
+import { images } from './images'
 
 function Hero () {
   return (
