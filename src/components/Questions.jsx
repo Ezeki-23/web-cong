@@ -1,5 +1,10 @@
+import ItemsContainer from "../components/Footer/ItemsContainer";
+import SocialIcons from "../components/Footer/SocialIcons";
+import { Icons } from "../components/Footer/Menus";
+
 function Pregs () {
     return (
+        <>
         <section className="bg-white dark:bg-gray-200">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <h2 className="mt-12 text-4xl text-center tracking-tight font-extrabold text-gray-900 dark:text-gray-900">Preguntas frecuentes que nos llegan</h2>
@@ -41,6 +46,26 @@ function Pregs () {
     </div>
     </div>
     </section>
+            <footer className="bg-orange-900 text-white">
+      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
+        <h1
+          className="md:text-4xl text-xl md:mb-0 mb-6 lg:leading-normal font-semibold
+         md:w-2/5"
+        >
+          <span className=" text-yellow-300">¡Gracias</span> por pasar por aquí!
+        </h1>
+      </div>
+      <ItemsContainer />
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
+      text-center pt-2 text-gray-400 text-sm pb-8"
+      >
+        <span>© 2023 Congregación Nueva Esperanza. All rights reserved.</span>
+        <span>Terms · Privacy Policy</span>
+        <SocialIcons Icons={Icons} />
+      </div>
+    </footer>
+    </>
     )
 }
 
